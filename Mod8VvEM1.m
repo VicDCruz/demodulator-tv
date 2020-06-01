@@ -13,6 +13,8 @@
 %Se presenta una parte de la envolvente y el resultado
 %en espectro usando fft 
 
+close all; clear all; clc;
+
 %Parte 1: creacion del flujo random
 L0=832; %atencion: si se cambia este valor,requiere ajustes
 a=-8;
@@ -146,4 +148,5 @@ figure
 plot(fa,P1c)
 title('Espectro ampliado en 60 MHz')
 
-
+% === DEMODULACIÓN ===
+main(ff, fif, tdtTx, t, t1, tdtTxf, fm, fp, figmin, figmax, xi1, fnm, xi)

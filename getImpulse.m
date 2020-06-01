@@ -1,4 +1,4 @@
-function [tsam, sampling] = getImpulse(Imax, Imin, fnm, x2)
+function sampling = getImpulse(Imax, Imin, fnm, x2)
     sampling = zeros(1,Imax-Imin);
     i=1;
     for aux=Imin:fnm:Imax
